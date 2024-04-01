@@ -1,7 +1,13 @@
 from enum import Enum
-from typing import List, Optional, Union
-
-from pydantic import BaseModel, Field
+from typing import List, Optional, Union, Any, Dict
+from pystac.extensions.classification import Classification
+from pydantic import (
+    BaseModel,
+    Field,
+    ConfigDict,
+    PlainSerializer,
+)
+from typing_extensions import Annotated
 
 
 class TaskEnum(str, Enum):
@@ -26,16 +32,13 @@ class ResultArray(BaseModel):
         pattern="^(uint8|uint16|uint32|uint64|int8|int16|int32|int64|float16|float32|float64)$",
     )
 
-class ClassObject(BaseModel):
-    value: int
-    name: str
-    description: Optional[str] = None
-    title: Optional[str] = None
-    color_hint: Optional[str] = None
-    nodata: Optional[bool] = False
+MLMClassification = Annotated[Classification,
+                             PlainSerializer(lambda x: x.to_dict(), return_type=Dict[str, Any], when_used='json')]
 
 class ModelOutput(BaseModel):
     task: TaskEnum
     result_array: Optional[List[ResultArray]] = None
-    classification_classes: Optional[List[ClassObject]] = None
+    classification_classes: Optional[List[MLMClassification]] = None
     post_processing_function: Optional[str] = None
+
+    model_config = ConfigDict(arbitrary_types_allowed=True)

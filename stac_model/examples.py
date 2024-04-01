@@ -3,7 +3,7 @@ import json
 import shapely
 from stac_model.schema import (
     Asset,
-    ClassObject,
+    MLMClassification,
     InputArray,
     MLModelExtension,
     MLModelProperties,
@@ -13,7 +13,6 @@ from stac_model.schema import (
     Runtime,
     Statistics,
 )
-
 
 def eurosat_resnet():
     input_array = InputArray(
@@ -106,9 +105,10 @@ def eurosat_resnet():
         "SeaLake": 9,
     }
     class_objects = [
-        ClassObject(value=class_map[class_name], name=class_name)
+        MLMClassification.create(value=class_map[class_name], description=class_name, name=class_name)
         for class_name in class_map
     ]
+
     output = ModelOutput(
         task="classification",
         classification_classes=class_objects,

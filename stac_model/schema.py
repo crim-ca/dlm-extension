@@ -25,7 +25,7 @@ from pystac.extensions.base import (
 )
 
 from .input import Band, InputArray, ModelInput, Statistics
-from .output import ClassObject, ModelOutput, ResultArray, TaskEnum
+from .output import MLMClassification, ModelOutput, ResultArray, TaskEnum
 from .runtime import Asset, Container, Runtime
 
 T = TypeVar(
@@ -240,7 +240,7 @@ __all__ = [
     "Band",
     "Statistics",
     "ModelOutput",
-    "ClassObject",
+    "MLMClassification",
     "Asset",
     "ResultArray",
     "Runtime",
