@@ -14,7 +14,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - n/a
 
 ### Deprecated
-- n/a
+- The `dlm-extension` endpoint is itself deprecated in favor of
+  [`mlm-extension`](https://github.com/crim-ca/mlm-extension) (a direct fork of `dlm-extension`)
+  with the corresponding schema hosted on
+  [https://crim-ca.github.io/mlm-extension/v1.0.0/schema.json](https://crim-ca.github.io/mlm-extension/v1.0.0/schema.json).
 
 ### Removed
 - n/a

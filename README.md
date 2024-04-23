@@ -1,5 +1,14 @@
 # Machine Learning Model Extension Specification
 
+> :info: <br>
+> Formerly *Deep Learning Model (DLM) Extension Specification*
+
+> :warning: <br>
+> This repository is deprecated in favor of
+> [https://github.com/crim-ca/mlm-extension](https://github.com/crim-ca/mlm-extension). <br>
+> The corresponding schemas are made available on
+> [https://crim-ca.github.io/mlm-extension/](https://crim-ca.github.io/mlm-extension/).
+
 [![hackmd-github-sync-badge](https://hackmd.io/lekSD_RVRiquNHRloXRzeg/badge)](https://hackmd.io/lekSD_RVRiquNHRloXRzeg?both)
 
 - **Title:** Machine Learning Model Extension
