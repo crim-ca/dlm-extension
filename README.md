@@ -1,6 +1,6 @@
 # Machine Learning Model Extension Specification
 
-> :info: <br>
+> :information_source: <br>
 > Formerly *Deep Learning Model (DLM) Extension Specification*
 
 > :warning: <br>
