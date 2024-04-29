@@ -1,19 +1,19 @@
-# Machine Learning Model Extension Specification
+# Deep Learning Model Extension Specification
 
 > :information_source: <br>
 > Formerly *Deep Learning Model (DLM) Extension Specification*
 
 > :warning: <br>
-> This repository is deprecated in favor of
-> [https://github.com/crim-ca/mlm-extension](https://github.com/crim-ca/mlm-extension). <br>
+> This repository is deprecated in favor of the *Machine Learning Model (MLM) Extension Specification* found at
+> [crim-ca/mlm-extension](https://github.com/crim-ca/mlm-extension). <br>
 > The corresponding schemas are made available on
 > [https://crim-ca.github.io/mlm-extension/](https://crim-ca.github.io/mlm-extension/).
 
 [![hackmd-github-sync-badge](https://hackmd.io/lekSD_RVRiquNHRloXRzeg/badge)](https://hackmd.io/lekSD_RVRiquNHRloXRzeg?both)
 
-- **Title:** Machine Learning Model Extension
-- **Identifier:** [https://stac-extensions.github.io/mlm/v1.0.0/schema.json](https://stac-extensions.github.io/mlm/v1.0.0/schema.json)
-- **Field Name Prefix:** mlm
+- **Title:** Deep Learning Model Extension
+- **Identifier:** [https://stac-extensions.github.io/mlm/v1.0.0/schema.json](https://stac-extensions.github.io/dlm/v1.0.0/schema.json)
+- **Field Name Prefix:** dlm
 - **Scope:** Collection, Item, Asset, Links
 - **Extension Maturity Classification:** Deprecated
 - **Owner:**
