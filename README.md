@@ -1,10 +1,8 @@
 # Deep Learning Model Extension Specification
 
-> :information_source: <br>
-> Formerly *Deep Learning Model (DLM) Extension Specification*
-
 > :warning: <br>
-> This repository is deprecated in favor of the *Machine Learning Model (MLM) Extension Specification* found at
+> This repository is deprecated in favor of the <br>
+> *Machine Learning Model (MLM) Extension Specification* found at
 > [crim-ca/mlm-extension](https://github.com/crim-ca/mlm-extension). <br>
 > The corresponding schemas are made available on
 > [https://crim-ca.github.io/mlm-extension/](https://crim-ca.github.io/mlm-extension/).
